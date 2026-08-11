@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-User Task Manager</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <header>
+      <h1>Task Manager App</h1>
+      <p class="subtitle">Assign and track tasks across multiple profiles</p>
+    </header>
+
+             <section class="card user-management">
+      <h2>Profile Management</h2>
+      <form id="user-form" class="input-group">
+        <input type="text" id="user-input" placeholder="Enter new username..." autocomplete="off">
+        <button type="submit">Create Profile</button>
+      </form>
+      
+      <br>
+      
+
+<ul id="user-list" class="user-list"></ul>
+
+<br>
+
+    <section class="card task-creation">
+             <h2>Creat new Task</h2>
+      <form id="task-form">
+        <div class="input-group">
+          <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off">
+        </div>
+        <div class="assign-group">
+               <label for="task-assignee">Assign To:</label>
+          <select id="task-assignee">
+          </select>
+          <button type="submit" class="btn-success">Add Task</button>
+        </div>
+      </form>
+    </section>
+
+ <br>
+    <section class="card task-board">
+      <h2>Task Board</h2>
+<div class="filter-group">
+  <label for="user-filter">Filter By User </label>
+  <select id="user-filter">
+    <option value="all">All users</option>
+  </select>
+</div>
+
+
+      <ul id="task-list" class="task-list">
+      </ul>
+    </section>
+  </div>
+  
+
+
+
+  <script src="/script.js"></script>
+
+<br>
+<footer class="app-footer">
+  <p>&copy; 2026 Mannan Software House. All rights reserved.</p>
+</footer>
+</footer>
+</body>
+</html>
